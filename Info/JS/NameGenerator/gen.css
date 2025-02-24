@@ -1,0 +1,58 @@
+body {
+   font-family: Arial, sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 100vh;
+   margin: 0;
+}
+
+li {
+   border: solid 1px #4c4545;
+   margin: 5%;
+}
+
+#name-display {
+   font-size: 24px;
+   font-weight: bold;
+   margin-bottom: 20px; 
+}
+
+#name-list {
+   position: absolute;
+   right: 20px;
+   top: 20px;
+   list-style: none;
+   padding: 0;
+   border: 1px solid #ccc;
+   border-radius: 5%;
+   width: 200px;
+   max-height: 400px;
+   overflow-y: auto;
+}
+
+#name-list li {
+   padding: 5px;
+   border-bottom: 1px solid #eee;
+   cursor: pointer;
+}
+
+#name-list li:hover {
+   background-color: #f0f0f0;
+}
+
+.highlight-green {
+   background-color: green;
+   color: white;
+}
+
+.highlight-yellow {
+   background-color: yellow;
+   color: black;
+}
+
+.highlight-red {
+   background-color: red;
+   color: white;
+}

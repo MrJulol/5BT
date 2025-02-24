@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Shop</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="filter-bar">
+                <div class="search">
+                    <input type="text" id="searchInput" oninput="searchProducts()" placeholder="Produkte suchen ...">
+                </div>
+                <div class="categories">
+                    <label><input type="checkbox" onchange="filterProducts()" value="Essen"> Essen</label>
+                    <label><input type="checkbox" onchange="filterProducts()" value="Trinken"> Trinken</label>
+                    <label><input type="checkbox" onchange="filterProducts()" value="Bio"> Bio</label>
+                    <label><input type="checkbox" onchange="filterProducts()" value="Alkoholisch"> Alkoholisch</label>
+                </div>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+
+                <!-- 
+                    hier
+                    dynamisch
+                    produkte
+                    einfuegen 
+                    -->
+
+            </div>
+
+        </div>
+
+        <div class="cart-content" id="cart">
+            <div>
+                <h3>WARENKORB</h3>
+                <div id="cartItems">
+
+                    <!-- 
+                        hier
+                        dynamisch
+                        produkte
+                        zum
+                        warenkorb
+                        hinzufuegen 
+                    -->
+
+                </div>
+            </div>
+            <div>
+                <div id="checkoutInfo">GESAMT: <span id="totalAmount">0.00 €</span></div>
+                <button id="checkoutButton">ZUR KASSE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- produkt-template -->
+    <div id="productTemplate">
+        <div class="product">
+            <img class="p-image" src="http://localhost/placeholder.png" alt="Placeholder">
+            <div>
+                <h3 class="p-title">Beispiel-Produkt</h3>
+                <p class="p-description">Eine kurze Beispielbeschreibung eines Produkts.</p>
+                <p class="p-theprice"><span class="p-price">13,37</span> €</p>
+                <div class="p-categories">
+                    <span class="badge">Essen</span>
+                </div>
+            </div>
+            <button class="add-to-cart">IN DEN WAREKORB</button>
+        </div>
+    </div>
+
+    <!-- warenkorb-template -->
+    <div id="cartItemTemplate">
+        <div class="cart-item">
+            <div class="i-title">Beispiel-Produkt</div>
+            <div class="i-theprice">
+                <span class="i-price">13,37</span> € / Stück *
+                <input class="i-quantity" type="number" min="1" value="1">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
