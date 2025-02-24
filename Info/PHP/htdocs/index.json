@@ -1,0 +1,56 @@
+[
+  {
+    "index": 0,
+    "name": "HTML_Übungen",
+    "url": "html/",
+    "done": true
+  },
+  {
+    "index": 1,
+    "name": "Numbers Grid",
+    "url": "numbers/",
+    "done": true
+  },
+  {
+    "index": 2,
+    "name": "Personen Tabelle",
+    "url": "tabelle/",
+    "done": true
+  },
+  {
+    "index": 3,
+    "name": "Geheimschrift",
+    "url": "geheim/",
+    "done": true
+  },
+  {
+    "index": 4,
+    "name": "Hintegrund-Farbe",
+    "url": "background/",
+    "done": true
+  },
+  {
+    "index": 5,
+    "name": "Notes / Login / Register",
+    "url": "notes/login/login.php",
+    "done": true
+  },
+  {
+    "index": 6,
+    "name": "File Browser",
+    "url": "browser/",
+    "done": true
+  },
+  {
+    "index": 7,
+    "name": "Logger",
+    "url": "logger/",
+    "done": false
+  },
+  {
+    "index": 8,
+    "name": "Router",
+    "url": "router/",
+    "done": false
+  }
+]

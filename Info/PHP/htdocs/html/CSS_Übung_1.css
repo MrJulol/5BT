@@ -1,0 +1,146 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+html, body {
+   height: 100%;
+}
+
+body {
+   width: 100%;
+   position: relative;
+   box-sizing: border-box;
+   background-color: rgb(215, 215, 215);
+}
+
+header {
+   border: 1px solid black;
+   background-color: rgb(198, 217, 169);
+}
+header * {
+   vertical-align: middle;
+}
+footer {
+   position: sticky;
+   bottom: 0;
+   width: 70%;
+   height: 5%;
+   margin-left: 15%;
+   text-align: center;
+   background-color: rgb(198, 217, 169);
+   vertical-align: middle;
+   border: 1px solid black;
+}
+
+button {
+   background-color: rgb(179, 134, 134);
+   width: 100px;
+   height: 35px;
+   display: inline-block;
+   margin: 5px;
+   border: 1px solid black;
+   border-radius: 5px;
+}
+p {
+   display: inline;
+}
+.content {
+   border: 1px solid black;
+   background-color: rgb(183, 180, 180);
+   width: 70%;
+   height: auto;
+   position: relative;
+   margin-left: 15%;
+}
+.blockFull{
+   text-align: center;
+   border: 1px solid black;
+   border-radius: 5px;
+   background-color: rgb(255, 255, 190);
+   margin: 5px;
+   display: inline-block;
+}
+.blockHalf {
+   border: 1px solid black;
+   background-color: rgb(195, 255, 190);
+   margin: 20px;
+   margin-left: 50px;
+   margin-right: 50px;
+   width: 20%;
+   display: inline-block;
+}
+.blockThird {
+   border: 1px solid black;
+   width: 25%;
+   margin: 10px;
+   display: inline-block;
+}
+.blockPhoto {
+   width: 90px;
+   margin-top: 50%;
+}
+.link {
+   height: 70%;
+   width: 10%;
+   display: inline;
+}
+.placeholder {
+   height: 150px;
+   background-color: rgb(154, 154, 255);
+   border-bottom: 1px solid black;
+}
+.container {
+   text-align:justify;
+   text-align: center;
+   vertical-align: middle;
+   margin-top: 2%;
+}
+.order {
+   height: 100%;
+   border-collapse: collapse;
+   display: table;
+}
+.vertical-line {
+   width: 1px;
+   border-left: 1px solid black;
+   height: 45px;
+   display: inline-block;
+}
+.image{
+   display: inline-block;
+   vertical-align: middle;
+   margin-bottom: 3%;
+   margin-left: 3%;
+}
+.desc {
+   display: inline-block;
+   max-width: 75%;
+   margin-left: 5%;
+}
+.logoContainer {
+   text-align: center;
+   display: inline-block;
+   margin-left: 15%;
+   margin-right: 15%;
+   width: 10%;
+}
+.buttonContainer {
+   text-align: center;
+   display: inline-block;
+}
+#Logo {
+   height: 50px;
+   width: 50px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.halfDivider {
+   height: 10vh;
+   width: 1px;
+   border-left: 1px solid black;
+   display: inline-block;
+}
+#time {
+   float: right;
+}

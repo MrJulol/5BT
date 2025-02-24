@@ -1,0 +1,56 @@
+<?php
+if (!isset($_GET['username']) || empty($_GET['username'])) {
+   die("Fehlender Benutzername.");
+}
+
+$hashedUsername = $_GET['username'];
+$filename = 'users/' . $hashedUsername . '.txt';
+
+$load = loadFile($filename);
+$note = isset($load[0]) ? $load[0] : '';
+$lastModified = $load[1];
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+   if (isset($_POST['note'])) {
+      file_put_contents($filename, $_POST['note']);
+      $load = loadFile($filename);
+      $note = isset($load[0]) ? $load[0] : '';
+      $lastModified = $load[1];
+   }
+}
+
+function loadFile($filename)
+{
+   if (file_exists($filename)) {
+      $note = file_get_contents($filename);
+      $lastModified = date("F d Y H:i:s.", filemtime($filename));
+      return [$note, $lastModified];
+   } else {
+      $lastModified = "Noch keine Notiz vorhanden.";
+      return [null, $lastModified];
+   }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Online-Notizbuch</title>
+   <link rel="stylesheet" href="notes.css">
+</head>
+
+<body>
+   <div class="note-container">
+      <h1>Notizbuch für <?php echo $hashedUsername; ?></h1>
+      <p>Letzte Änderung: <?php echo $lastModified; ?></p>
+      <form method="post">
+         <textarea name="note" rows="10" cols="30"><?php echo $note; ?></textarea><br>
+         <input type="submit" value="Speichern">
+      </form>
+   </div>
+</body>
+
+</html>

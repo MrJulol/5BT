@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule .* index.php [L,QSA]
+
+ErrorDocument 404 /notfound.html
+ErrorDocument 403 /forbidden.html
+ErrorDocument 500 /servererror.html

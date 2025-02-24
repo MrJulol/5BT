@@ -1,0 +1,62 @@
+[
+  {
+    "name": "John",
+    "surname": "Doe",
+    "email": "john.doe@example.com",
+    "telnr": "123-456-7890"
+  },
+  {
+    "name": "Jane",
+    "surname": "Smith",
+    "email": "jane.smith@example.com",
+    "telnr": "098-765-4321"
+  },
+  {
+    "name": "Alice",
+    "surname": "Johnson",
+    "email": "alice.johnson@example.com",
+    "telnr": "234-567-8901"
+  },
+  {
+    "name": "Bob",
+    "surname": "Brown",
+    "email": "bob.brown@example.com",
+    "telnr": "345-678-9012"
+  },
+  {
+    "name": "Charlie",
+    "surname": "Davis",
+    "email": "charlie.davis@example.com",
+    "telnr": "456-789-0123"
+  },
+  {
+    "name": "Diana",
+    "surname": "Evans",
+    "email": "diana.evans@example.com",
+    "telnr": "567-890-1234"
+  },
+  {
+    "name": "Eve",
+    "surname": "Foster",
+    "email": "eve.foster@example.com",
+    "telnr": "678-901-2345"
+  },
+  {
+    "name": "Frank",
+    "surname": "Green",
+    "email": "frank.green@example.com",
+    "telnr": "789-012-3456"
+  },
+  {
+    "name": "Grace",
+    "surname": "Harris",
+    "email": "grace.harris@example.com",
+    "telnr": "890-123-4567"
+  },
+  {
+    "name": "Hank",
+    "surname": "Ivy",
+    "email": "hank.ivy@example.com",
+    "telnr": "901-234-5678"
+  }
+]

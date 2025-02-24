@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML-Elemente testen</title>
+  </head>
+  <body>
+    <h1>h1 - Größte Überschrift</h1>
+    <h2>h2 - Zweitgrößte Überschrift</h2>
+    <h3>h3 - Dritthöchste Überschrift</h3>
+    <h4>h4 - Mittelgroße Überschrift</h4>
+    <h5>h5 - Kleinere Überschrift</h5>
+    <h6>h6 - Kleinste Überschrift</h6>
+
+    <p>
+      p - Dies ist ein normaler Absatz. Absätze helfen dabei, Text zu
+      strukturieren.
+    </p>
+
+    <blockquote>
+      blockquote - Dies ist ein Blockzitat. Es wird verwendet, um längere Zitate
+      hervorzuheben.
+    </blockquote>
+
+    <hr />
+
+    <pre>
+pre - Text mit festgelegtem Abstand. Nützlich für Code oder vorformatierte Inhalte.</pre
+    >
+
+    <address>
+      address - Dies ist ein Adressblock. Nützlich für Kontaktinformationen.
+    </address>
+
+    <span
+      >span - Dies ist ein Inline-Container für Text ohne besondere
+      Bedeutung.</span
+    >
+
+    <strong>strong - Betont den Text stark (wird fett dargestellt).</strong>
+
+    <em>em - Betont den Text leicht (wird kursiv dargestellt).</em>
+
+    <b>b - Fettgeschriebener Text (ohne zusätzliche Bedeutung).</b>
+
+    <i>i - Kursiv geschriebener Text (ohne zusätzliche Bedeutung).</i>
+
+    <mark>mark - Markierter Text (hervorgehoben).</mark>
+
+    <small>small - Kleiner Text.</small>
+
+    <del>del - Durchgestrichener Text (zeigt eine gelöschte Information).</del>
+
+    <ins>ins - Unterstrichener Text (zeigt eine hinzugefügte Information).</ins>
+
+    <sub
+      >sub - Tiefgestellter Text (z.B. für chemische Formeln:
+      H<sub>2</sub>O).</sub
+    >
+
+    <sup>sup - Hochgestellter Text (z.B. für Exponenten: x<sup>2</sup>).</sup>
+
+    <hr />
+
+    <h2>Listen</h2>
+
+    <ul>
+      <li>ul - Ungeordnete Liste (Aufzählung mit Punkten)</li>
+      <li>li - Listenelement in einer ungeordneten Liste</li>
+    </ul>
+
+    <ol>
+      <li>ol - Geordnete Liste (Aufzählung mit Zahlen)</li>
+      <li>li - Listenelement in einer geordneten Liste</li>
+    </ol>
+
+    <dl>
+      <dt>dt - Definitionsterm</dt>
+      <dd>dd - Definition der Termini</dd>
+    </dl>
+
+    <hr />
+
+    <h2>Links und Medien</h2>
+
+    <a href="https://www.example.com">a - Link zu einer Website</a>
+
+    <img src="https://via.placeholder.com/150" alt="Beispielbild" />
+
+    <audio controls>
+      <source src="audio.mp3" type="audio/mp3" />
+      Ihr Browser unterstützt kein Audio-Tag.
+    </audio>
+
+    <video controls width="250">
+      <source src="video.mp4" type="video/mp4" />
+      Ihr Browser unterstützt kein Video-Tag.
+    </video>
+
+    <hr />
+
+    <h2>Tabellen</h2>
+
+    <table>
+      <caption>
+        caption - Tabellenüberschrift
+      </caption>
+      <thead>
+        <tr>
+          <th>th - Tabellenüberschrift</th>
+          <th>th - Tabellenüberschrift</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>td - Tabellenzelle</td>
+          <td>td - Tabellenzelle</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>td - Tabellenfuß</td>
+          <td>td - Tabellenfuß</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <hr />
+
+    <h1>Formular mit verschiedenen Eingabeelementen</h1>
+
+    <form action="/submit" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Dein Name" />
+
+      <br /><br />
+
+      <label for="message">Nachricht:</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        cols="50"
+        placeholder="Deine Nachricht"
+      ></textarea>
+
+      <br /><br />
+
+      <button type="submit">Absenden</button>
+
+      <br /><br />
+
+      <label for="color">Wähle eine Farbe:</label>
+      <select id="color" name="color">
+        <optgroup label="Primärfarben">
+          <option value="rot">Rot</option>
+          <option value="blau">Blau</option>
+          <option value="gelb">Gelb</option>
+        </optgroup>
+        <optgroup label="Sekundärfarben">
+          <option value="gruen">Grün</option>
+          <option value="violett">Violett</option>
+          <option value="orange">Orange</option>
+        </optgroup>
+      </select>
+
+      <br /><br />
+
+      <fieldset>
+        <legend>Wähle:</legend>
+
+        <label
+          ><input type="checkbox" name="interessen" value="sport" />
+          Sport</label
+        ><br />
+        <label
+          ><input type="checkbox" name="interessen" value="musik" />
+          Musik</label
+        ><br />
+        <label
+          ><input type="checkbox" name="interessen" value="kunst" />
+          Kunst</label
+        >
+
+        <br /><br />
+
+        <legend>Geschlecht:</legend>
+        <label
+          ><input type="radio" name="geschlecht" value="männlich" />
+          Männlich</label
+        ><br />
+        <label
+          ><input type="radio" name="geschlecht" value="weiblich" />
+          Weiblich</label
+        ><br />
+        <label
+          ><input type="radio" name="geschlecht" value="divers" /> Divers</label
+        >
+      </fieldset>
+
+      <br /><br />
+
+      <label for="stadt">Stadt:</label>
+      <input
+        list="staedte"
+        id="stadt"
+        name="stadt"
+        placeholder="Stadt eingeben"
+      />
+      <datalist id="staedte">
+        <option value="Berlin"></option>
+        <option value="München"></option>
+        <option value="Hamburg"></option>
+        <option value="Köln"></option>
+      </datalist>
+
+      <br /><br />
+
+      <label for="ergebnis">Ergebnis:</label>
+      <output id="ergebnis" name="ergebnis">0</output>
+    </form>
+
+    <hr />
+
+    <h2>Interaktive Elemente</h2>
+
+    <details>
+      <summary>summary - Klicken, um Details anzuzeigen</summary>
+      <p>
+        details - Dies sind die Details, die ein-/ausgeblendet werden können.
+      </p>
+    </details>
+
+    <dialog open>dialog - Dies ist ein Dialogfenster.</dialog>
+
+    <hr />
+
+    <h2>Semantische Elemente</h2>
+
+    <header>header - Kopfbereich der Seite.</header>
+
+    <main>main - Hauptinhalt der Seite.</main>
+
+    <section>section - Ein Abschnitt des Dokuments.</section>
+
+    <article>article - Ein eigenständiger Artikel oder Beitrag.</article>
+
+    <aside>aside - Ein Nebenelement, z.B. eine Sidebar.</aside>
+
+    <footer>footer - Fußbereich der Seite.</footer>
+
+    <hr />
+
+    <h2>Weitere Elemente</h2>
+
+    <time datetime="2024-09-11">time - 11. September 2024</time>
+
+    <progress value="50" max="100">progress - 50%</progress>
+
+    <meter value="0.7" min="0" max="1">meter - 70%</meter>
+  </body>
+</html>
