@@ -14,6 +14,16 @@ const issIcon = L.icon({
 
 const issMarker = L.marker([0, 0], { icon: issIcon }).addTo(map);
 
+// Retrieve stored positions from localStorage
+let positions = JSON.parse(localStorage.getItem("issPositions")) || [];
+
+// Function to update the path on the map
+function updatePath() {
+  if (positions.length > 1) {
+    L.polyline(positions, { color: "red" }).addTo(map);
+  }
+}
+
 async function getISSPosition() {
   const response = await fetch(
     "https://api.wheretheiss.at/v1/satellites/25544"
@@ -26,6 +36,19 @@ async function updateISSPosition() {
   const position = await getISSPosition();
   issMarker.setLatLng(position);
   map.setView(position, map.getZoom());
+
+  // Update positions array and localStorage
+  positions.push(position);
+  if (positions.length > 150) {
+    positions.shift();
+  }
+  localStorage.setItem("issPositions", JSON.stringify(positions));
+
+  // Update the path on the map
+  updatePath();
 }
+
+// Initial path rendering
+updatePath();
 
 setInterval(updateISSPosition, 1000);
